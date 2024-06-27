@@ -1,4 +1,4 @@
-package com.example.appandres.ui.entities.core
+package com.example.appandres.ui.core
 
 import android.app.Application
 import androidx.room.Room

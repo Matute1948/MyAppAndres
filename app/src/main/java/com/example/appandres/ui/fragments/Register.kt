@@ -10,13 +10,14 @@ import com.example.appandres.R
 import com.example.appandres.data.local.database.entity.UserDB
 import com.example.appandres.data.local.repository.DataBaseRepository
 import com.example.appandres.databinding.FragmentRegisterBinding
+import com.example.appandres.ui.core.AppAndres
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class Register(conexion : DataBaseRepository) : Fragment() {
+class Register : Fragment() {
 
     private lateinit var binding: FragmentRegisterBinding
-    private var conexion: DataBaseRepository = conexion
+    private var conexion = AppAndres.getDBConnection()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".ui.entities.core.AppAndres"
+        android:name=".ui.core.AppAndres"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -16,8 +16,11 @@
         android:theme="@style/Theme.AppAndres"
         tools:targetApi="31">
         <activity
+            android:name=".ui.acitvities.BiometricActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.acitvities.ActivityAllCartas"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ui.acitvities.MainActivity"
             android:exported="true">

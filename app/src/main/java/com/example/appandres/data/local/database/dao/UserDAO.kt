@@ -14,12 +14,12 @@ interface UserDAO {
     @Query("select*from users where id_user =:id")
     fun getUserById(id:Int):UserDB
 
-    @Query("select*from users where name_user =:name")
-    fun getUserByName(name:String):UserDB
+    @Query("select*from users where name_user =:name AND password_user = :pass")
+    fun getUserByNameAndPass(name:String, pass:String):UserDB
 
     @Insert
     fun saveUser(user: List<UserDB>)
 
     @Delete
-    fun saveUser(user: UserDB)
+    fun deleteUser(user: UserDB)
 }

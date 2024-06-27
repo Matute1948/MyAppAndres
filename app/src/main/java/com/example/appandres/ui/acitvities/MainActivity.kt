@@ -1,21 +1,12 @@
 package com.example.appandres.ui.acitvities
 
 import android.os.Bundle
-import android.text.Spannable
-import android.text.SpannableString
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
-import com.example.appandres.data.local.database.entity.UserDB
 import com.example.appandres.data.local.repository.DataBaseRepository
 import com.example.appandres.databinding.ActivityMainBinding
-import com.example.appandres.ui.entities.core.AppAndres
+import com.example.appandres.ui.core.AppAndres
 import com.example.appandres.ui.fragments.Login
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
